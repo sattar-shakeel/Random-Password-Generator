@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0a3d62;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    height: 300px;
+    width: 600px;
+    border-radius: 20px;
+}
+.main h1{
+    color: #0a3d62;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main .inputarea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #0a3d62;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.main .inputarea input{
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    width: 500px;
+}
+.main .inputarea img{
+    width: 20px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.main .inputarea img:hover{
+    transform: scale(1.1);
+}
+.main .btn{
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: #0a3d62;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    transition-duration: 0.3s;
+
+}
+
+.main .btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transform: scale(1.1);
+
+}
+
+
+
+@media screen and (max-width: 500px){
+    .main{
+        width:400px;
+        text-align: center;
+
+    }
+    .main .inputarea{
+        width:350px;
+    }
+
+}
+
+
+@media screen and (max-width: 400px){
+    .main{
+        width:300px;
+        text-align: center;
+    }
+    .main .inputarea{
+        width:250px;
+    }
+    .main .inputarea input{
+        font-size: 15px;
+    }
+    .btn{
+        width: 200px;
+    }
+
+}

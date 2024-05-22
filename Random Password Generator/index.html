@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <h1>Generate a Random Password</h1>
+        <div class="inputarea">
+            <input type="text" placeholder="Click to Generate Password" id="password">
+            <img src="Assets/paste.png" id="copyicon" onclick="copy();">
+
+        </div>
+        <p id="message"></p>
+        <button onclick="createPassword()" class="btn">Generate Password</button>
+    </Div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+</html>
